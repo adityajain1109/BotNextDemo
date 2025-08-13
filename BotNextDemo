@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <title>BotNext</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="BotNextMobile.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .mainWrapper {
+            margin: 0 auto;
+        }
+
+        .mainHeader {
+            height: 60px;
+            padding: 0 2.5rem;
+            display: none;
+            align-items: center;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            /* box-shadow: rgba(0,0,0,0.2) 0 2px 2px 0; */
+            border-bottom: 2px solid #0090da;
+        }
+
+     
+
+        .mainBody {
+            /* background-image: url("./assets/img/indusind12.jpg"); */
+            background-image: url("./img/USRetailBankimg.png");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+        }
+		@media (max-width: 768px) {
+            .mainBody {
+                background-position: 0% !important;
+                background-size: 100% 100% !important;
+                background-repeat: no-repeat !important;
+                background-image: url("./img/USRetailMobileBanking.png") !important;
+            }
+        }
+
+        .mainContent {
+
+            font-size: 45px;
+            line-height: 44px;
+            letter-spacing: -0.3px;
+            font-family: 'Arial', 'Helvetica', 'sans-serif';
+            font-weight: 600;
+            height: 100vh;
+            display: none;
+            max-width: 50%;
+            align-items: center;
+            color: #fff;
+            text-align: left;
+            padding: 50px 0 0 50px;
+        }
+		.chatContainer {
+    position: absolute;
+    height: calc(100% - 7rem);
+    width: 360px;
+    right: 1rem;
+    bottom: 1rem;
+}
+    </style>
+   
+</head>
+
+
+<body>
+    <div class="mainWrapper">
+        <div class="mainHeader">
+            <div class="mainLogo">
+            </div>
+        </div>
+        <div class="mainBody">
+            <div class="mainContent">
+                
+            </div>
+        </div>
+    </div>
+    <div id="chatwidget"></div>
+
+   
+    <script src="BotNextMobile.js"></script>
+</body>
+</html>
