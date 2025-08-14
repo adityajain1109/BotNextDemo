@@ -266,12 +266,26 @@
         }
 
         .chatwidget {
-          display: flex;
-          height: 10px;
-          justify-content: flex-end;
-          align-items: end;
-          padding: 0; 
-      }
+    position: fixed;
+    bottom: 20px; /* distance from bottom */
+    right: 20px;  /* distance from right */
+    width: 80px;  /* size of the bot widget */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white; /* optional background */
+    border-radius: 50%; /* make it circular */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.chatwidget img {
+    width: 60%;
+    height: auto;
+}
+
 
         .search-group {
             display: flex;
@@ -612,4 +626,5 @@
             animation-delay: 1s;
             animation-fill-mode: both;
         }
+
 
