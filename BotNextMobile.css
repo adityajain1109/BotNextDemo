@@ -1,3 +1,23 @@
+.chatwidget {
+    position: fixed;
+    bottom: 20px; /* distance from bottom */
+    right: 20px;  /* distance from right */
+    width: 80px;  /* size of the bot widget */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white; /* optional background */
+    border-radius: 50%; /* make it circular */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.chatwidget img {
+    width: auto;
+    height: auto;
+}
 * {
             margin: 0;
             padding: 0;
@@ -626,5 +646,6 @@
             animation-delay: 1s;
             animation-fill-mode: both;
         }
+
 
 
